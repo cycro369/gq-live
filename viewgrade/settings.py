@@ -24,9 +24,9 @@ BASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 SECRET_KEY = '!r9shaxxf5sl1o^s)h2vfpo$z)u2mm4orkk5=9oni@n*sp+4cs'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = False
+DEBUG = True
 
-ALLOWED_HOSTS = ['gradequery-acisc.herokuapp.com','127.0.0.1']
+ALLOWED_HOSTS = ['']
 
 
 # Application definition
@@ -87,6 +87,23 @@ DATABASES = {
         'PORT': '5432'
     }
 }
+
+
+
+
+#up.uses_netloc.append("postgre")
+#url = up.urlparse(os.environ["DATABASE_URL"])
+#conn = psycopg2.connect(databases==)
+
+#sqlite
+
+'''DATABASES = {
+    'default': {
+        'ENGINE': 'django.db.backends.sqlite3',
+        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+    }
+}'''
+
 
 
 # Password validation
