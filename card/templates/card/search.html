@@ -1,0 +1,82 @@
+
+{% include 'card/index.html' %}
+
+
+
+<div class="card-body">
+
+    <div class="table-responsive">
+      <table
+      class="table table-bordered"
+      id="DataTable"
+      width="25%"
+      cellspacing="1"
+      >
+      <thead>
+        {% for student in Student_query %}
+        <tr>
+          <th>Name: <p>{{student.Name}}</p></th>
+          <th>Year &amp; Section: <p>{{student.Levels}} {{student.Section}}</p> </th>
+          <th>School Year: <p>2019-2020</p></th>
+
+        {% endfor %}
+
+        {% for card in grade_query %}
+            <th>STATUS: <p>{{card.Status}}</p></th>
+        </tr>
+
+      </thead>
+    </div>
+
+   
+
+  </div>
+
+
+
+
+   
+<p class="h5"> Details</p>
+  <div class="card-body">
+    <div class="table-responsive">
+      <table
+        class="table table-bordered"
+        id="dataTable"
+        width="100%"
+        cellspacing="0"
+      >
+        <thead>
+          <tr>
+            <th>Filipino</th>
+            <th>English</th>
+            <th>Mathematics</th>
+            <th>Science</th>
+            <th>Araling Panlipunan</th>
+            <th>ESP</th>
+            <th>TLE</th>
+            <th>MAPEH</th>
+            <th>Gen.AVERAGE</th>
+
+          </tr>
+        </thead>
+        <thead>
+
+          <p class="h5">Average Grade per Subject</p>
+          
+          <tr>
+            <th>{{card.Filipino}}</th>
+            <th>{{card.English}}</th>
+            <th>{{card.Mathematics}}</th>
+            <th>{{card.Science}}</th>
+            <th>{{card.AP}}</th>
+            <th>{{card.ESP}}</th>
+            <th>{{card.TLE}}</th>
+            <th>{{card.MAPEH}}</th>
+            <th>{{card.GenAvg}}</th>
+          </tr>
+          {% endfor %}
+        </thead>
+      </br>
+    </div>
+    </div>
+    </div>

@@ -1,0 +1,1 @@
+web: gunicorn viewgrade.wsgi --log-file-
