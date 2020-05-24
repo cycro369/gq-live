@@ -26,7 +26,7 @@ SECRET_KEY = '!r9shaxxf5sl1o^s)h2vfpo$z)u2mm4orkk5=9oni@n*sp+4cs'
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['']
+ALLOWED_HOSTS = ['gradequery-acisc.herokuapp.com']
 
 
 # Application definition
