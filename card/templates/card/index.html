@@ -1,48 +1,7 @@
-<!DOCTYPE html>
 
-<!--Developed by PAUL ANGELO BERGADO-->
-<!-- Alabel Central Integrated SPED Center-->
-<!--Grade Query System-->
-<!--Language: Python 3.0-->
-<!--Framework: Django 3.0-->
+{% extends "card/base.html" %}
+{% block body_block %}
 
-<html lang="en">
-
-{% load static %}
-
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="author" content="Paul Angelo Bergado">
-    <meta name="generator" content="Grade Query System Beta Version 1.0">
-    <link rel="shortcut icon" href="http://example.com/favicon.ico" />
-
-
-    <link rel="canonical" href="https://getbootstrap.com/docs/4.4/examples/sticky-footer-navbar/">
-    <!--Bootstrap CDN-->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
-    
-    <!--CSS-->
-    
-    <link href="{% static 'css/main.css' %}" rel="stylesheet" />
-    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.1.0/css/all.css" integrity="sha384-lKuwvrZot6UHsBSfcMvOkWwlCMgc0TaWr+30HWe3a4ltaBwTZhyTEggF5tJv8tbt" crossorigin="anonymous">
-
-
-
-    <title>GQS Beta v 1.0</title>
-</head>
-<body>
-
-  
-
-  <nav class="navbar navbar-expand-md navbar-dark fixed-top bg-dark">
-    <a class="navbar-brand" href="{% url 'index'  %}">Grade Query System Beta v 1.0</a>
-    
-      </form>
-    </div>
-  </nav>
-</header>
 
   <!-- Modal content -->
 
@@ -104,9 +63,9 @@
                     </div>
 </div>
 
+{% endblock %}
 
-<script type="text/javascript" src="{% static 'js\main.js' %}" ></script>
-</body>
-</html>
+
+
 
 
