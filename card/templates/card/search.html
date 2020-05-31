@@ -2,15 +2,15 @@
 {% include 'card/base.html' %}
 
 
-
 <div class="card-body-fluid">
 
     <div class="table-responsive">
       <table
-      class="table table-bordered"
+      class="table table-striped"
       id="DataTable"
       width="25%"
       cellspacing="1"
+      padding-left="50"
       >
       <thead>
         {% for student in Student_query %}
@@ -36,51 +36,84 @@
 
 <br>
 <br>
-<br>
-
    
-<p class="h5"> Details</p>
-  <div class="card-body-fluid">
-    <div class="table-responsive">
+
       <table
-        class="table table-bordered"
+        class="table table-striped"
         id="dataTable"
-        width="100%"
+        width="25%"
         cellspacing="0"
       >
         <thead>
           <tr>
-            <th>Filipino</th>
-            <th>English</th>
-            <th>Mathematics</th>
-            <th>Science</th>
-            <th>Araling Panlipunan</th>
-            <th>ESP</th>
-            <th>TLE</th>
-            <th>MAPEH</th>
-            <th>Gen.AVERAGE</th>
-
+            <th>Subjects</th>
+            <th>Average Grades</th>
           </tr>
-        </thead>
-        <thead>
+        </thread>
 
-          <p class="h5">Average Grade per Subject</p>
-          
+        <tbody>
+        
           <tr>
-            <th>{{card.Filipino}}</th>
-            <th>{{card.English}}</th>
-            <th>{{card.Mathematics}}</th>
-            <th>{{card.Science}}</th>
-            <th>{{card.AP}}</th>
-            <th>{{card.ESP}}</th>
-            <th>{{card.TLE}}</th>
-            <th>{{card.MAPEH}}</th>
-            <th>{{card.GenAvg}}</th>
+            <td>Filipino</td>
+            <td>{{card.Filipino}}</td>
           </tr>
+
+          <tr>
+            <td>English</td>
+            <td>{{card.English}}</td>
+          </tr>
+
+          <tr>
+            <td>Mathematics</td>
+             <td>{{card.Mathematics}}</td>
+          </tr>
+
+          <tr>
+            <td>Science</td>
+              <td>{{card.Science}}</td>
+          </tr>
+
+          <tr>
+            <td>Araling Panlipunan</td>
+            <td>{{card.AP}}</td>
+          </tr>
+
+          <tr>
+            <td>ESP</td>
+            <td>{{card.ESP}}</td>
+          </tr>
+
+          <tr>
+            <td>TLE</td>
+            <td>{{card.TLE}}</td>
+          </tr>
+
+          <tr>
+            <td>MAPEH</td>
+            <td>{{card.MAPEH}}</td>
+          </tr>
+
+          <tr>
+
+            <th>Gen.AVERAGE</th>
+               <td><b>{{card.GenAvg}}</b></td>
+          </tr>
+
+          <thread>
+
+          <tr>
+            <th>Subjects</th>
+            <th>Average Grades</th>
+          </tr>
+          </thread>
+          </tbody>
+
+</div>
+
+   
           {% endfor %}
-        </thead>
-      </br>
-    </div>
-    </div>
-    </div>
+
+         
+
+
 
