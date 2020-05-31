@@ -15,15 +15,27 @@
       <thead>
         {% for student in Student_query %}
         <tr>
-          <th>Name: <p>{{student.Name}}</p></th>
-          <th>Year &amp; Section: <p>{{student.Levels}} {{student.Section}}</p> </th>
-          <th>School Year: <p>2019-2020</p></th>
+          <th>Name</th>
+          <th>Level &amp; Section</th>
+          <th>School Year</th>
+          <th>STATUS</th>
+        </tr>
+
+        <tr>
+          <td> {{student.Name}}</td>
+          <td>{{student.Levels}} {{student.Section}}</td>
+          <td>2019-2020</td>
+       
+         
+         <!-- <th>Year &amp; Section: <p>{{student.Levels}} {{student.Section}}</p> </th>
+          <th>School Year: <p>2019-2020</p></th> -->
 
         {% endfor %}
 
         {% for card in grade_query %}
-            <th>STATUS: <p>{{card.Status}}</p></th>
-        </tr>
+            <td>{{card.Status}}</p></td>
+         </tr>
+        </thead> 
 
       </thead>
     </div>
